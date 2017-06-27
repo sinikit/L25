@@ -57,8 +57,8 @@ post '/contacts' do
 
 				 Pony.mail(
 			      to: 'sinikit@yahoo.com',
-			      #from: @message ,
-			      #subject: "#{@customername} has contacted you",
+			      from: @message ,
+			      subject: "#{@customername} has contacted you",
 			      body: @message
 			     )
 
